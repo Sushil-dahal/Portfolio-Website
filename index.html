@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sushil Dahal — Portfolio</title>
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <link rel="icon" type="image/png" href="favicon.png">
+<header class="header">
+  <div class="nav">
+    <div class="brand">Sushil Dahal</div>
+    <nav class="menu" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="btn-menu" id="openMenu">MENU ☰</button>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="panel" role="dialog" aria-modal="true" aria-label="Menu">
+    <a href="#about"   class="jump">ABOUT</a>
+    <a href="#skills"  class="jump">SKILLS</a>
+    <a href="#projects"class="jump">PROJECTS</a>
+    <a href="#timeline"class="jump">TIMELINE</a>
+    <a href="#contact" class="jump">CONTACT</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-in">
+    <!-- Cartoon avatar placeholder -->
+    <img class="avatar" src="https://cdn-icons-png.flaticon.com/512/1999/1999625.png" alt="Portrait" />
+    <h1 class="title">Sushil Dahal</h1>
+    <p class="subtitle">AI/ML Engineer — B.S. Computer Science Student — Full-Stack Developer</p>
+    <a class="cta" href="#about">Explore My Work</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <h2 class="h2">About Me</h2>
+  <p class="lead">Passionate computer science student with expertise in AI/ML and full-stack development.</p>
+  <div class="panel-blue">
+    <div class="icon-wrap"><div class="icon-circle">👋</div></div>
+    <div class="typing-animation left-align">
+      <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=false&vCenter=true&width=500&height=70&duration=2000&lines=Hi++I'm+Sushil!;" alt="Typing Animation" />
+    </div>
+    <div class="big">AI/ML Engineer & Full-Stack Developer</div>
+    <p>I'm a Computer Science student at the University of North Texas with a strong passion for artificial intelligence, machine learning, and full-stack development. I enjoy building innovative solutions that solve real-world problems and enhance user experiences.</p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <h2 class="h2">Technical Skills</h2>
+  <p class="lead">My expertise spans across AI/ML, web development, and core programming languages.</p>
+  
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3><i class="fas fa-brain"></i> AI/ML Technologies</h3>
+      <div class="tech-icons-container">
+        <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,opencv" alt="AI/ML Technologies" />
+      </div>
+    </div>
+    
+    <div class="skill-card">
+      <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
+      <div class="tech-icons-container">
+        <img src="https://skillicons.dev/icons?i=react,nextjs,ts,nodejs,html,css,bootstrap" alt="Web Development" />
+      </div>
+    </div>
+    
+    <div class="skill-card">
+      <h3><i class="fas fa-database"></i> Databases & DevOps</h3>
+      <div class="tech-icons-container">
+        <img src="https://skillicons.dev/icons?i=postgresql,mysql,docker,git,github,azure" alt="Databases & DevOps" />
+      </div>
+    </div>
+    
+    <div class="skill-card">
+      <h3><i class="fas fa-code"></i> Programming Languages</h3>
+      <div class="tech-icons-container">
+        <img src="https://skillicons.dev/icons?i=python,java,cpp,js,ts" alt="Programming Languages" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <h2 class="h2">Projects</h2>
+  <p class="lead">Innovative projects showcasing my skills in AI/ML and full-stack development.</p>
+  <div class="grid">
+    <article class="card"><h3>UNT Rater: Professor Review Platform</h3><p>Full-stack web application built with FastAPI, React, and PostgreSQL. Features secure authentication with JWT and UNT email verification. <a href="#" style="color:var(--link)">View Project</a></p></article>
+    <article class="card"><h3>Eagle GPT: University AI Chatbot</h3><p>RAG-powered chatbot using PineconeDB and GPT-4o mini for accurate university information. Deployed on Azure with Docker containerization and CI/CD pipeline. <a href="#" style="color:var(--link)">View Project</a></p></article>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="section" id="timeline">
+  <h2 class="h2">Timeline</h2>
+  <div class="timeline">
+    <div class="item"><time>2025-2026</time> — B.S. Computer Science, University of North Texas (CGPA 3.92/4.0, Dean's Honors List)</div>
+    <div class="item"><time>2023-2023</time> — IT Intern and Teaching Assistant, The College of Idaho (Optimized Python algorithms, 100% A grades for tutees)</div>
+    <div class="item"><time>2025</time> — Developed UNT Rater: Full-stack Professor Review Platform</div>
+    <div class="item"><time>2025</time> — Created Eagle GPT: RAG-Powered AI Chatbot for University Engagement</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-wrap" id="contact">
+  <div class="contact-inner">
+    <h2>Get In Touch</h2>
+    <p><strong>Email:</strong> sushil@example.com</p>
+    <p><strong>Location:</strong> Denton, TX</p>
+    
+    <div class="socials">
+      <a href="mailto:Sushildahal@my.unt.edu" aria-label="Gmail"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/sushil-dahal-138a5b20a/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/sushildahal" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+    
+    <p>...or use the following form</p>
+
+    <form>
+      <input type="text"  placeholder="Your Name *"  required>
+      <input type="email" placeholder="Your Email *" required>
+      <input type="tel"   placeholder="Your Phone">
+      <textarea placeholder="Your Message *" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="footer">
+      <div>Copyright © Sushil Dahal 2025</div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Resume</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<button class="toTop" id="toTop">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
